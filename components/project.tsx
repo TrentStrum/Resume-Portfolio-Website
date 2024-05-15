@@ -1,34 +1,43 @@
-"use client";
+'use client';
 
-import { useRef, useState, useEffect } from 'react';
-import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
-import ProjectModal from "./modalProject";
+import {
+	useRef,
+	useState,
+	useEffect,
+	JSXElementConstructor,
+	Key,
+	PromiseLikeOfReactNode,
+	ReactElement,
+	ReactNode,
+	ReactPortal,
+} from 'react';
+import Image from 'next/image';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import ProjectModal from './modalProject';
 
 //type ProjectProps = (typeof projectsData)[number];
 
-export default function Project({ project }) {
-  const [ showModal, setShowModal ] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-  const dialogRef = useRef<HTMLDialogElement | null>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 1", "1.33 1"],
-  });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+export default function Project({ project }: any) {
+	const [showModal, setShowModal] = useState(false);
+	const ref = useRef<HTMLDivElement>(null);
+	const dialogRef = useRef<HTMLDialogElement | null>(null);
+	const { scrollYProgress } = useScroll({
+		target: ref,
+		offset: ['0 1', '1.33 1'],
+	});
+	const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+	const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
-  function handleProjectModal ( status: boolean ) {
-	console.log(status)
-    setShowModal(status);
-	
-  }
+	function handleProjectModal(status: boolean) {
+		console.log(status);
+		setShowModal(status);
+	}
 
-  function handleClose() {
-	setShowModal(false);
-  }
+	function handleClose() {
+		setShowModal(false);
+	}
 
-  	useEffect(() => {
+	useEffect(() => {
 		console.log(showModal);
 		if (showModal === true) {
 			dialogRef.current?.showModal();
@@ -37,8 +46,7 @@ export default function Project({ project }) {
 		}
 	}, [showModal]);
 
-
-  return (
+	return (
 		<>
 			<ProjectModal
 				dialogRef={dialogRef}
@@ -48,7 +56,7 @@ export default function Project({ project }) {
 
 			<motion.div
 				ref={ref}
-				style={{ 
+				style={{
 					scale: scaleProgess,
 					opacity: opacityProgess,
 				}}
@@ -64,14 +72,32 @@ export default function Project({ project }) {
 							{project.shortDescription}
 						</p>
 						<ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
-							{project.tags.map((tag, index) => (
-								<li
-									className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70'
-									key={index}
-								>
-									{tag}
-								</li>
-							))}
+							{project.tags.map(
+								(
+									tag:
+										| string
+										| number
+										| boolean
+										| ReactElement<
+												any,
+												| string
+												| JSXElementConstructor<any>
+										  >
+										| Iterable<ReactNode>
+										| ReactPortal
+										| PromiseLikeOfReactNode
+										| null
+										| undefined,
+									index: Key | null | undefined
+								) => (
+									<li
+										className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70'
+										key={index}
+									>
+										{tag}
+									</li>
+								)
+							)}
 						</ul>
 					</div>
 
@@ -95,5 +121,5 @@ export default function Project({ project }) {
 				</section>
 			</motion.div>
 		</>
-  );
+	);
 }
