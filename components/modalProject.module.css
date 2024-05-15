@@ -1,0 +1,60 @@
+.dialog {
+  background-color: rgba(67, 67, 85, 0.98);
+  border-radius: 1%;
+}
+
+.header {
+    color: white;
+    font-size: large;
+    padding-left: .5rem;
+}
+
+.container{
+  display: flex;
+  border-radius: 1%;
+  opacity: 1;
+}
+
+.subcontainer1{
+  flex: 1;
+  display: flex;
+  flex-direction : column;
+}
+
+.subcontainer2{
+  flex: 1;
+  display: flex;
+}
+
+.item1{
+  flex:1;
+  color: white;
+  border-radius: 1%;
+  margin : .5rem;
+}
+
+.item2{
+  padding: 1rem;
+}
+
+.form {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.buttons {
+    padding: .5rem;
+    border-radius: 9999px;
+    background-color: rgba(226, 226, 236, 0.219);
+    color: white;
+    transition-duration: 0.4s;
+    flex: 1 1 auto;
+    outline-offset: 2px;
+}
+
+.buttons:hover {
+  outline: none;
+  background-color:  rgba(226, 226, 236, 0.466);
+  transform: scale(1.1);
+}
+
