@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import styles from './modalProject.module.css';
-import Backdrop from './backdrop';
 
 type modalProps = {
 	selectedProject: any;
