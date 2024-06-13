@@ -40,6 +40,14 @@
         "async": false
       }
     },
+    "(app-client)/./components/intro.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/intro.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./components/contact.tsx": {
       "*": {
         "id": "(sc_client)/./components/contact.tsx",
@@ -64,25 +72,9 @@
         "async": false
       }
     },
-    "(app-client)/./components/intro.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/intro.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./components/projects.tsx": {
       "*": {
         "id": "(sc_client)/./components/projects.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/section-divider.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/section-divider.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -96,9 +88,9 @@
         "async": false
       }
     },
-    "(app-client)/./node_modules/react-hot-toast/dist/index.mjs": {
+    "(app-client)/./components/section-divider.tsx": {
       "*": {
-        "id": "(sc_client)/./node_modules/react-hot-toast/dist/index.mjs",
+        "id": "(sc_client)/./components/section-divider.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -131,6 +123,14 @@
     "(app-client)/./context/theme-context.tsx": {
       "*": {
         "id": "(sc_client)/./context/theme-context.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/react-hot-toast/dist/index.mjs": {
+      "*": {
+        "id": "(sc_client)/./node_modules/react-hot-toast/dist/index.mjs",
         "name": "*",
         "chunks": [],
         "async": false
@@ -219,6 +219,14 @@
       ],
       "async": false
     },
+    "C:\\Users\\trent\\OneDrive\\Code_Share\\TrentPortfolio\\components\\intro.tsx": {
+      "id": "(app-client)/./components/intro.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
     "C:\\Users\\trent\\OneDrive\\Code_Share\\TrentPortfolio\\components\\contact.tsx": {
       "id": "(app-client)/./components/contact.tsx",
       "name": "*",
@@ -243,24 +251,8 @@
       ],
       "async": false
     },
-    "C:\\Users\\trent\\OneDrive\\Code_Share\\TrentPortfolio\\components\\intro.tsx": {
-      "id": "(app-client)/./components/intro.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
     "C:\\Users\\trent\\OneDrive\\Code_Share\\TrentPortfolio\\components\\projects.tsx": {
       "id": "(app-client)/./components/projects.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\trent\\OneDrive\\Code_Share\\TrentPortfolio\\components\\section-divider.tsx": {
-      "id": "(app-client)/./components/section-divider.tsx",
       "name": "*",
       "chunks": [
         "app/page:static/chunks/app/page.js"
@@ -275,19 +267,11 @@
       ],
       "async": false
     },
-    "C:\\Users\\trent\\OneDrive\\Code_Share\\TrentPortfolio\\node_modules\\react-hot-toast\\dist\\index.mjs": {
-      "id": "(app-client)/./node_modules/react-hot-toast/dist/index.mjs",
+    "C:\\Users\\trent\\OneDrive\\Code_Share\\TrentPortfolio\\components\\section-divider.tsx": {
+      "id": "(app-client)/./components/section-divider.tsx",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\trent\\OneDrive\\Code_Share\\TrentPortfolio\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}": {
-      "id": "(app-client)/./node_modules/next/font/google/target.css?{\"path\":\"app\\\\layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -323,8 +307,24 @@
       ],
       "async": false
     },
+    "C:\\Users\\trent\\OneDrive\\Code_Share\\TrentPortfolio\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}": {
+      "id": "(app-client)/./node_modules/next/font/google/target.css?{\"path\":\"app\\\\layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
     "C:\\Users\\trent\\OneDrive\\Code_Share\\TrentPortfolio\\app\\globals.css": {
       "id": "(app-client)/./app/globals.css",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\trent\\OneDrive\\Code_Share\\TrentPortfolio\\node_modules\\react-hot-toast\\dist\\index.mjs": {
+      "id": "(app-client)/./node_modules/react-hot-toast/dist/index.mjs",
       "name": "*",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"
