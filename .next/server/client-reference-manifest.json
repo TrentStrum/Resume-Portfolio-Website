@@ -40,6 +40,14 @@
         "async": false
       }
     },
+    "(app-client)/./components/contact.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/contact.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./components/about.tsx": {
       "*": {
         "id": "(sc_client)/./components/about.tsx",
@@ -51,14 +59,6 @@
     "(app-client)/./components/experience.tsx": {
       "*": {
         "id": "(sc_client)/./components/experience.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/contact.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/contact.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -219,6 +219,14 @@
       ],
       "async": false
     },
+    "C:\\Users\\trent\\OneDrive\\Code_Share\\TrentPortfolio\\components\\contact.tsx": {
+      "id": "(app-client)/./components/contact.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
     "C:\\Users\\trent\\OneDrive\\Code_Share\\TrentPortfolio\\components\\about.tsx": {
       "id": "(app-client)/./components/about.tsx",
       "name": "*",
@@ -229,14 +237,6 @@
     },
     "C:\\Users\\trent\\OneDrive\\Code_Share\\TrentPortfolio\\components\\experience.tsx": {
       "id": "(app-client)/./components/experience.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\trent\\OneDrive\\Code_Share\\TrentPortfolio\\components\\contact.tsx": {
-      "id": "(app-client)/./components/contact.tsx",
       "name": "*",
       "chunks": [
         "app/page:static/chunks/app/page.js"
