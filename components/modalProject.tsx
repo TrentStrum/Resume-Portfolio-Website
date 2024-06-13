@@ -40,7 +40,7 @@ export default function ProjectModal({
 						</div>
 						<div className={styles.item2}>
 							<div className={styles.form}>
-								<button className={styles.buttons}>
+								{/* <button className={styles.buttons}>
 									<a
 										href={selectedProject.demoUrl}
 										target='_blank'
@@ -48,7 +48,7 @@ export default function ProjectModal({
 									>
 										See Demo
 									</a>
-								</button>
+								</button> */}
 								<button className={styles.buttons}>
 									<a
 										href={selectedProject.gitRepoUrl}

@@ -2,9 +2,11 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-import corpcommentImg from '@/public/corpcomment.png';
-import rmtdevImg from '@/public/rmtdev.png';
 import wordanalyticsImg from '@/public/wordanalytics.png';
+import portfolioThumbnail from '@/public/PortfolioProjectThumbnail.png'
+import NeoHDThumbnail from '@/public/NeoHDThumbnail.png'
+import ReactivitiesThumbnail from '@/public/ReactivitiesThumbnail.png'
+import ReStoreThumbnail from '@/public/ReStoreThumbnail.png'
 
 export const links = [
 	{
@@ -96,9 +98,9 @@ export const projectsData = [
 			'Stripe',
 			'Docker',
 		],
-		imageUrl: corpcommentImg,
-		demoUrl: 'https://ultimateqa.com/fake-landing-page',
-		gitRepoUrl: 'https://ultimateqa.com/complicated-page',
+		imageUrl: ReStoreThumbnail,
+		// demoUrl: 'https://ultimateqa.com/fake-landing-page',
+		gitRepoUrl: 'https://github.com/TrentStrum/ReactStore',
 	},
 	{
 		id: 2,
@@ -120,16 +122,16 @@ export const projectsData = [
 			'MobX',
 			'FB Login',
 		],
-		imageUrl: rmtdevImg,
-		demoUrl: 'https://ultimateqa.com/automation/fake-pricing-page/',
-		gitRepoUrl: 'https://ultimateqa.com/filling-out-forms/',
+		imageUrl: ReactivitiesThumbnail,
+		// demoUrl: 'https://ultimateqa.com/automation/fake-pricing-page/',
+		gitRepoUrl: 'https://github.com/TrentStrum/Activities_App',
 	},
 	{
 		id: 3,
 		title: 'How2Help',
-		shortDescription:
+		shortDescription: 'Coming soon...',
+		fullDescription:
 			'A passion project built to help people find ways to get involved in causes that matter to them. This app is built using React on the front-end & C#/.NET/SQL back-end.',
-		fullDescription: 'Long description of How2Help here',
 		tags: [
 			'React',
 			'Postman',
@@ -141,26 +143,41 @@ export const projectsData = [
 			'CSS Modules',
 		],
 		imageUrl: wordanalyticsImg,
-		demoUrl: 'https://courses.ultimateqa.com/users/sign_in',
+		// demoUrl: 'https://courses.ultimateqa.com/users/sign_in',
 		gitRepoUrl:
 			'https://ultimateqa.com/simple-html-elements-for-automation/',
 	},
+	// {
+	// 	id: 4,
+	// 	title: 'NeoHD-IG',
+	// 	shortDescription:
+	// 		'React app developed for USCs Neonatal Hemodynamics Interest Group.',
+	// 	fullDescription:
+	// 		'Live website currently in use by the customer. Built using React and vanilla CSS with CSS modules. The site also incorporates the use of CSS Flexbox and CSS Grid.',
+	// 	tags: ['React', 'CSS'],
+	// 	imageUrl: NeoHDThumbnail,
+	// 	demoUrl: 'https://courses.ultimateqa.com/users/sign_in',
+	// 	gitRepoUrl: 'https://github.com/TrentStrum/NeoHD_React',
+	// },
 	{
-		id: 4,
-		title: 'MERN E-commerce Store',
+		id: 5,
+		title: 'Portfolio Website',
 		shortDescription:
-			'MERN stack e-commerce store with the following features: .........',
-		fullDescription: 'Long description of MERN store here',
+			'This is the current site you are viewing. It is a Next.js app using Typescript to present my resume and portfolio.',
+		fullDescription:
+			'Next.js app using TypeScript. For styling most of the application uses Tailwind with some vanilla CSS, as well. To aid the styling and improved user experience Framer Motion was also used. The contact section contains a working email feature built using React Email.',
 		tags: [
-			'MongoDb',
-			'ExpressJS',
+			'Next.js',
+			'TypeScript',
 			'React',
-			'NodeJS',
+			'CSS',
+			'Tailwind',
+			'Framer Motion',
+			'React Email',
 		],
-		imageUrl: wordanalyticsImg,
-		demoUrl: 'https://courses.ultimateqa.com/users/sign_in',
-		gitRepoUrl:
-			'https://ultimateqa.com/simple-html-elements-for-automation/',
+		imageUrl: portfolioThumbnail,
+		// demoUrl: 'https://trent-resume.vercel.app/',
+		gitRepoUrl: 'https://github.com/TrentStrum/Resume-Portfolio-Website',
 	},
 ];
 
@@ -179,7 +196,7 @@ export const skillsData = [
 	'SQL',
 	'Redux',
 	'React Query',
-	'Express',
 	'PostgreSQL',
 	'Framer Motion',
+	'React Email'
 ] as const;
